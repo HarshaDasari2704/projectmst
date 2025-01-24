@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Our Commercial Website - Quality Products at the Best Prices.">
+    <title>Official Commercial Website</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+  <header>
+    <nav>
+        <div class="logo">
+            <a href="/"><img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Logo_of_Apple_Inc..svg" alt="Company Logo"></a>
+        </div>
+        <div class="nav-links">
+            <a href="/home">Home</a>
+            <a href="/products">Products</a>
+            <a href="/about">About Us</a>
+            <a href="/contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Search Bar on a New Line -->
+    <div class="search-bar">
+        <form action="/search" method="get" class="search-form">
+            <input type="search" id="search" name="search" placeholder="Search products...">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+</header>
+
+<!-- Categories Section -->
+<section class="categories">
+    <h2>Shop by Categories</h2>
+    <div class="category-links">
+        <a href="/grocery" class="category-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Shopping_cart_icon.svg" alt="Grocery" class="category-icon">
+            <span>Grocery</span>
+        </a>
+        <a href="/vegetables" class="category-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Carrot_icon.svg" alt="Vegetables" class="category-icon">
+            <span>Vegetables</span>
+        </a>
+        <a href="/grains" class="category-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Wheat_ear_icon.svg" alt="Grains" class="category-icon">
+            <span>Grains</span>
+        </a>
+    </div>
+</section>
+
+<!-- Featured Products Section -->
+<section class="market-items">
+    <h2>Our Featured Products</h2>
+    <div class="product-grid">
+        <div class="product-item">
+            <img src="https://via.placeholder.com/200x200.png?text=Product+1" alt="Product 1">
+            <h3>Product Name 1</h3>
+            <p>$19.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-item">
+            <img src="https://via.placeholder.com/200x200.png?text=Product+2" alt="Product 2">
+            <h3>Product Name 2</h3>
+            <p>$24.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-item">
+            <img src="https://via.placeholder.com/200x200.png?text=Product+3" alt="Product 3">
+            <h3>Product Name 3</h3>
+            <p>$29.99</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+</section>
+
+<!-- About Us Section -->
+<section class="about">
+    <h2>About Us</h2>
+    <p>We are a leading provider of high-quality products. Our mission is to deliver excellence and value to our customers.</p>
+</section>
+
+<!-- Contact Section -->
+<section class="contact">
+    <h2>Contact Us</h2>
+    <form action="/send-message" method="post" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<!-- Footer Section -->
+<footer class="site-footer">
+    <div class="footer-links">
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms of Service</a>
+    </div>
+    <p>&copy; 2025 [Your Company Name]. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

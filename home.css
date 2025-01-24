@@ -1,0 +1,55 @@
+/* Styling for the Categories Section */
+.categories {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.categories h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.category-links {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.category-item {
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+    width: 200px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.category-item:hover {
+    transform: scale(1.05);
+}
+
+.category-icon {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.category-item span {
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Market Items */
+.market-items {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Other styles remain unchanged... */

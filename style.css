@@ -1,0 +1,136 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff6f61, #f0a202); /* Beautiful gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 10px;
+}
+
+/* Container for the form */
+.container {
+    width: 100%;
+    max-width: 480px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Header styling */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #2d2d2d;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Form Group styling */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Input and Textarea fields */
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s ease-in-out;
+    margin-bottom: 10px;
+}
+
+/* Focus effect on inputs */
+input:focus, textarea:focus {
+    border-color: #ff6f61; /* Accent color for focus */
+    outline: none;
+}
+
+/* Styling for the "Show Password" checkbox */
+.show-password-container {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.show-password-container input[type="checkbox"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.show-password-container label {
+    font-size: 14px;
+    color: #777;
+    cursor: pointer;
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff6f61; /* Vibrant accent color */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #f0a202; /* Lighter accent color on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+button:active {
+    transform: translateY(0); /* Button tap effect */
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cart-container">
+        <header>
+            <h1>Farmer's Market Cart</h1>
+        </header>
+
+        <section class="cart-items">
+            <table id="cartTable">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        
+                        <th>Price</th>
+                        <th>Quality</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="cart-item">
+                        <td class="product-name">
+                            
+                            <img src="https://media.istockphoto.com/id/589985234/photo/homegrown-tomatoes.jpg?s=612x612&w=0&k=20&c=uzUhfFsfesTDClRQ_3PACAAS5SIb8UR1RyU9FqAVAco=" alt="Tomatoes" class="product-image">
+                            <span class="product-title">Tomatoes</span>
+                        </td>
+                        
+                        <td class="product-price">2</td>
+                        <td class="product-quality">Grade A, Fresh</td>
+                        <td><input type="number" value="1" class="quantity-input" onchange="updateTotal()"></td>
+                        <td class="product-total">2</td>
+                        <td><button class="remove-item" onclick="removeItem(this)">Remove</button></td>
+                    </tr>
+                    
+                    <tr class="cart-item">
+                        <td class="product-name">
+                            
+                            <img src="https://cdn.mos.cms.futurecdn.net/iC7HBvohbJqExqvbKcV3pP-1200-80.jpg" alt="Potatoes" class="product-image">
+                            <span class="product-title">Potatoes</span>
+                        </td>
+                        <td class="product-price">3</td>
+                        <td class="product-quality">Organic, Fresh</td>
+                        <td><input type="number" value="1" class="quantity-input" onchange="updateTotal()"></td>
+                        <td class="product-total">3</td>
+                        <td><button class="remove-item" onclick="removeItem(this)">Remove</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="cart-summary">
+            <p>Total: <span id="totalAmount">5</span> USD</p>
+            <button id="checkoutBtn" onclick="checkout()">Proceed to Checkout</button>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
